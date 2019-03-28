@@ -1,0 +1,30 @@
+cd
+git clone https://github.com/17ack312/calculator.git
+cd
+if [ -d progs ]
+then
+cd
+cd calculator
+cp * /$HOME/progs
+cd
+rm -rf calculator
+cd
+cd progs
+chmod +x *
+sh calculator.sh
+else 
+cd
+mkdir progs
+cd   
+cd calculator  
+cp * /$HOME/progs                                          
+cd  
+rm -rf calculator  
+cd      
+cd progs  
+chmod +x *  
+sh calculator.sh
+fi
+
+
+
